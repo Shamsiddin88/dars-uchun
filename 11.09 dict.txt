@@ -1,0 +1,229 @@
+-------------------------------------------4-masala-----------------------------------------------
+number=[[1, 2, 3], [4, 5, 6], [10, 11, 12], [7, 8, 9]]
+
+print (number[number.index(max(number))])
+
+-------------------------------------------5-masala-----------------------------------------------
+arr=[1, 'abcd', 3, 1.2, 4, 'xyz', 5, 'pqr', 7, -5, -12.22]
+sum=0
+for i in arr:
+    if type(i)==int:
+        sum +=1
+print (sum)
+-------------------------------------------6-masala-----------------------------------------------
+number=(4, 3, 2, 2, -1, 18)
+sum=1
+for i in number:
+    sum*=i
+print(sum)
+-------------------------------------------7-masala-----------------------------------------------
+str=[(), (), (), ('a', 'b'), ('a', 'b', 'c'), ('d') ]
+str = [tupl for tupl in str if tupl]
+print(str) 
+-------------------------------------------8-masala-----------------------------------------------
+numbers = [2,3,8,4,7,9,8,2,6,5,1,6,1,2,3,4,6,9,1,2]
+kop = max(numbers, key = numbers.count)
+count = numbers.count(kop)
+print(f"{kop} -> {count} marta.") 
+-------------------------------------------9-masala-----------------------------------------------
+num=[(2,5), (1,2), (4,4), (2,3), (2,1)]
+num.sort(key=lambda x: x[1])
+print(num)
+-------------------------------------------10-masala-----------------------------------------------
+
+arr=[1, 'abcd', 3, 1.2, 4, 'xyz', 5, 'pqr', 7, -5, -12.22]
+arr2=[]
+for i in arr:
+    if type(i)!=str:
+        arr2.append(i)
+print (max(arr2))
+
+
+
+-------------------------------------------S1-masala-----------------------------------------------
+
+keys=['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+dictionary={}
+
+for i in range(len(keys)):
+    dictionary[keys[i]] = values[i]
+print (dictionary)
+    
+
+-------------------------------------------S2-masala-----------------------------------------------
+dict1={'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+dict2={'Thirty':30, 'Forty':40, 'Fifty':50}
+
+dict1.update(dict2)
+print (dict1)
+-------------------------------------------S3-masala-----------------------------------------------
+sampleDict={"class":{"student": {"name" : "Mike", "marks" :{ "physics":70, "history":80  }  }   }}
+print(sampleDict["class"]["student"]["marks"]["history"])
+-------------------------------------------S4-masala-----------------------------------------------
+sampleDict={'a':100, 'b':200, 'c':300}
+num=sampleDict.values()
+if 200 in num:
+    print ("yes")
+else:
+    print ("no")
+-------------------------------------------S5-masala-----------------------------------------------
+sampleDict={"name" : "Kelly",
+            "age" : 25,
+            "salary" : 8000,
+            "city" : "New York"}
+
+sampleDict.pop("city")
+sampleDict.update({"location": "New York"})
+
+print (sampleDict)
+-------------------------------------------S6-masala-----------------------------------------------
+sampleDict={'Physics':82,
+            'Math': 65,
+            'History':75}
+min_mark=min(sampleDict.values())
+
+for subject, mark in sampleDict.items():
+    if mark == min_mark:
+        print (subject)
+
+
+
+-------------------------------------------S7-masala-----------------------------------------------
+sampleDict={'a':100, 'b': 200, 'c':300}
+summa=sum(sampleDict.values())
+
+print (summa)
+
+
+
+-------------------------------------------1-masala-----------------------------------------------
+
+str1=['S001', 'S002', 'S003', 'S004']
+str2=['Adina Park', 'Leyton Marsh', 'Duncan Boyle', 'Saim Richards']
+num=[85, 98, 89, 92]
+
+str3={}
+
+for i in range(len(str2)):
+    str3[i]={str2[i]:num[i]}
+    
+    
+for i in range(len(str3)):
+    str1[i]={str1[i]:str3[i]}
+    
+print (str1)
+-------------------------------------------2-masala-----------------------------------------------
+n = "w3resources"
+all = {}
+for i in range(len(n)):
+    all[n[i]] = n.count(n[i])
+    
+print(all)
+-------------------------------------------3-masala-----------------------------------------------
+dict1={1:"ABC", 2:"DEF", 3:"GHI", 4:"JKL", 5:":MNO"}
+russ = ''
+for i in range(1,len(dict1)):
+    if i% 2 == 1:
+        russ = dict1[i]
+        dict1[i] = dict1[i+1] 
+        dict1[i+1] = russ
+    
+        
+print(dict1)
+-------------------------------------------4-masala-----------------------------------------------
+
+str="Salom Yoz. Olam juda ham go'zal. Imtihon bo'lyapti."
+str1=str.split('.')
+print(str1)
+
+str2=str.split(' ')
+print(str2)
+
+-------------------------------------------5-masala-----------------------------------------------
+num=[61, 228, 9]
+a=str(num[0])
+b=str(num[1])
+c=str(num[2])
+
+if a[0]>b[0] and a[0]>c[0] and b[0]>c[0]:
+    print(a+b+c)
+elif a[0]>b[0] and a[0]>c[0] and c[0]>b[0]:
+    print(a+c+b)
+elif b[0]>a[0] and b[0]>c[0] and a[0]>c[0]:
+    print(b+a+c)
+elif b[0]>a[0] and b[0]>c[0] and a[0]<c[0]:
+    print(b+c+a)
+elif c[0]>a[0] and c[0]>b[0] and a[0]>b[0]:
+    print(c+a+b)
+else:
+    print (c+b+a)
+-------------------------------------------6-masala-----------------------------------------------
+str = [[1, 'Jean Castro', 'V'], [2, 'Lula Powell', 'V'], [3, 'Brian Howell', 'VI'], [4, 'Lynne Foster', 'VI'], [5, 'Zachary Simon', 'VII']]
+dict = {sublist[0]: sublist[1:] for sublist in str}
+print(dict)
+
+-------------------------------------------7-masala-----------------------------------------------
+num=[123, 456, 789, 852, 12, 42, 61, 369]
+
+for i in num:
+    a=str(i)[0]
+    if int(a)%2 == 0:
+        print (i, end=' ')
+-------------------------------------------1-masala-----------------------------------------------
+dic1={1:10, 2:20} 
+dic2={3:30, 4:40}
+dic3={5:50, 6:60}
+
+dic1.update(dic2)
+dic1.update(dic3)
+print(dic1)
+-------------------------------------------2-masala-----------------------------------------------
+n=int(input("Nga qiymat kiriting: "))
+dic={}
+
+for i in range(1, n):
+    dic[i]=i*i
+    
+print(dic)
+-------------------------------------------3-masala-----------------------------------------------
+son={1:10, 2:20, 3:30, 4:40, 5:50, 6:60}
+a=max(son.keys())
+b=min(son.keys())
+
+son.pop(a)
+son.pop(b)
+print(son)
+
+
+-------------------------------------------4-masala-----------------------------------------------
+dict1 = {1: 123, 2: 456, 3:231, 4:789, 5:654}
+sorted_keys = sorted(dict1, key=dict1.get, reverse=True)[:3]
+print(sorted_keys)
+
+-------------------------------------------5-masala-----------------------------------------------
+num=[(1,2), (2,3), (3,4)]
+arr=[]
+for i in range(0, len(num)):
+    arr.append(sum(list((num[i]))))
+       
+print (arr)
+-------------------------------------------6-masala-----------------------------------------------
+num=[(1,2), (2,3), (3,4)]
+arr=[]
+for i in range(0, len(num)):
+    arr.append(list((num[i])))
+       
+print (arr)
+-------------------------------------------7-masala-----------------------------------------------
+d1 = {'a':100, 'b':200, 'c':300}
+d2 = {'a':300, 'b':200, 'd':400}
+
+for key in d2:
+    if key in d1:
+        d1[key] += d2[key]
+    else:
+        d1[key] = d2[key]
+
+print(d1)
+

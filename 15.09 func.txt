@@ -1,0 +1,53 @@
+-------------------------------------------1-masala-----------------------------------------------
+ls = list (map(int, input("Sonlar kiriting: ").split()))
+ls= list (map(lambda a: a * a, ls))
+print(ls)
+-------------------------------------------2-masala-----------------------------------------------
+ls= [('English', 88), ('Science', 90), ('Math', 97), ('Social sciences', 82)]
+new= sorted(ls, key=lambda x: x[1])
+print(new)
+-------------------------------------------3-masala-----------------------------------------------
+
+ls=[1,2,3,4,5,6,7,8,9,10]
+
+juft = list((filter(lambda x : x%2==0, ls)))
+toq = list(filter(lambda x : x%2==1, ls))
+
+print(juft, "=> juft list")
+print(toq, "=> toq list")
+-------------------------------------------4-masala-----------------------------------------------
+ls=str(input("Son kiriting:"))
+m=0
+for i in range (len(ls)):
+    if ls[i]=="0":
+        m+=1
+    else:
+        break
+    
+print(m)
+-------------------------------------------5-masala-----------------------------------------------
+str = input("Sana va vaqtni kiriting DD.MM.YYYY HH:MM:")
+sana, vaqt = str.split()
+kun, oy, yil = sana.split(".")
+
+oy_dict = {
+    "01": "January",
+    "02": "February",
+    "03": "March",
+    "04": "April",
+    "05": "May",
+    "06": "June",
+    "07": "July",
+    "08": "August",
+    "09": "September",
+    "10": "October",
+    "11": "November",
+    "12": "December"
+}
+month = oy_dict[oy]
+
+soat, minut = vaqt.split(":")
+
+output_str = f"{kun} {month} {yil} year {soat} hour {minut} minute"
+
+print(output_str)

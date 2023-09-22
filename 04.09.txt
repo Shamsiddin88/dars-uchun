@@ -1,0 +1,93 @@
+-------------------------------------------1-masala--------------------------------------------------
+n=input("Nga qiymat bering:")
+print (type(n))
+
+
+-------------------------------------------2-masala--------------------------------------------------
+
+a=int(input("A ga qiymat bering: "))
+b=int(input("B ga qiymat bering: "))
+c=(a+b)/2
+print ("Sonlarning o'rta arifmetigi", c, "ga teng")
+
+
+-------------------------------------------3-masala--------------------------------------------------
+a=(input("Biror belgi kiriting: "))
+b=int(input("Son kiriting: "))
+
+print ((a + " ") * b)
+
+
+-------------------------------------------4-masala--------------------------------------------------
+
+a=(input("Ikki xonali son kiriting: "))
+a= (a[::-1])
+print ("Sonning teskarisi ", a)
+
+
+-------------------------------------------5-masala--------------------------------------------------
+sekund=int(input("Sekundni kiriting: "))
+soat=sekund // 3600
+minut = (sekund - (soat * 3600))//60
+soniya = sekund % 60
+print (soat, "soat", minut, "minut", soniya, "soniya")
+
+
+-------------------------------------------6-masala--------------------------------------------------
+bayt=int(input("Baytni kiriting: "))
+kb=bayt // 1024
+
+print ("Kiritilgan bayt", kb , "kb bo'ladi")
+
+
+-------------------------------------------7-masala--------------------------------------------------
+print ("Birinchisi ikkinchisidan katta bo'lgan ikkita kesma kiriting")
+a=int(input("a-kesma: "))
+b=int(input("b-kesma: "))
+
+c=a//b
+
+print ("a kesmada b kesmani", c , "marta joylashtirsak bo'ladi")
+
+
+-------------------------------------------8-masala--------------------------------------------------
+son=int(input("3 xonalik son kiriting: "))
+print (son//100, "-", (son%100)//10, "-", son%10)
+
+
+-------------------------------------------9-masala--------------------------------------------------
+a=int(input("Uchburchakni 1-tomonini kiriting: "))
+b=int(input("Uchburchakni 2-tomonini kiriting: "))
+c=int(input("Uchburchakni 3-tomonini kiriting: "))
+
+p=a+b+c
+print ("Uchburchakni perimetri", p, "ga teng")
+
+
+-------------------------------------------10-masala--------------------------------------------------
+ism=input("Ismingizni kiriting: ")
+print ("Salom", ism)
+
+
+-------------------------------------------11-masala--------------------------------------------------
+yil=int(input("Melodiy yil kiriting: "))
+h= yil-622+(yil-622)//32
+print ("Bu melodiy yil", h, "hijriy yil bo'ladi")
+
+
+
+-------------------------------------------12-masala--------------------------------------------------
+yil=int(input("Yil kiriting: "))
+asr= yil//100+1
+print (yil, "-yil", asr, "-asrga kiradi")
+
+
+-------------------------------------------13-masala--------------------------------------------------
+soz=(input("So'z kiriting: "))
+print (soz[0].upper()+soz[1:-1:]+soz[-1].upper())
+
+-------------------------------------------14-masala--------------------------------------------------
+print ("Welcome to najot talim. najot talim awesome, isn't it?") 
+matn = "Welcome to najot talim. najot talim awesome, isn't it?" 
+soz = input ("So'z kiriting: ") 
+print ("Matnda kiritilgan so'zdan", matn.count(soz), "ta qatnashgan")

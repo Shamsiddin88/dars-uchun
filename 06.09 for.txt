@@ -1,0 +1,161 @@
+-------------------------------------------1-masala-----------------------------------------------
+n=int(input("Nga qiymat bering: "))
+for i in range(n,1,-1):
+    if i%2 == 0:
+        print (i)
+
+
+
+-------------------------------------------2-masala-----------------------------------------------
+n=int(input("Nga qiymat bering: "))
+for i in range(n,0,-1):
+    if not i%2 == 0:
+        print (i)
+
+
+-------------------------------------------3-masala-----------------------------------------------
+son=int(input("Sonni kiriting: "))
+count=0
+i=1
+while i<=son:
+    if son%i==0:
+        count+=1
+    i+=1
+
+if count==2:
+    print ("Tub son")
+else:
+    print ("Murakkab son")
+
+
+-------------------------------------------4-masala-----------------------------------------------
+for i in range(99,1000,1):
+    yuz=i//100
+    on=i%100//10
+    bir=i%10
+    if yuz == on or yuz == bir or on==bir:
+        print (i)
+
+
+-------------------------------------------5-masala-----------------------------------------------
+son=input("Son kiriting: ")
+a=int(len(son))
+i=0
+for i in range (0,a,1):
+    print (son[i], end=" ")
+
+
+-------------------------------------------6-masala-----------------------------------------------
+x=int (input("X: "))
+y=int (input("Y: "))
+z=int (input("Z: "))
+
+a=min (x,y,z)
+sum=0
+for i in range (1, a+1, 1):
+    if x%i == 0 and y%i == 0 and z%i == 0:
+        sum=i
+                
+print ("Sonlarning EKUB = ", sum, "ga teng")
+-------------------------------------------7-masala-----------------------------------------------
+
+n=int(input("Nga qiymat bering: "))
+f1=0
+f2=1
+f3=0
+
+while f1<n:
+    
+    print(f1, end=" ")
+    f3=f1+f2
+    f1=f2
+    f2=f3
+
+
+-------------------------------------------16-masala-----------------------------------------------
+
+summa=float(input("Boshlang'ich summani kiriting: "))
+p=float (input("foizni kiriting: "))
+
+oy=0
+box=2*summa
+
+while box>summa:
+    summa+=summa*(p/100)
+    oy+=1
+    
+print (oy, "oyda", int(summa), "sum bo'ladi")
+
+
+-------------------------------------------17-masala-----------------------------------------------
+
+
+print ("N>M bo'lgan butun musbat ikkita son kiriting")
+n=int(input("N=:"))
+m=int(input("M=:"))
+
+sum=0
+
+while n>=m:
+    n=n-m
+    sum+=1
+    
+print (sum, "butun", n, "qoldiq" )
+
+
+-------------------------------------------18-masala-----------------------------------------------
+son=int(input("Sonni kiriting: "))
+count=0
+i=1
+while i<=son:
+    if son%i==0:
+        count+=1
+    i+=1
+
+if count==2:
+    print ("Tub son")
+else:
+    print ("Murakkab son")
+
+
+-------------------------------------------19-masala-----------------------------------------------
+n=int(input("Nga qiymat bering: "))
+f1=0
+f2=1
+f3=0
+
+for i in range (1,n+1,1):
+    
+    print(f1, end=" ")
+    f3=f1+f2
+    f1=f2
+    f2=f3
+
+
+-------------------------------------------20-masala-----------------------------------------------
+a=int (input("A: "))
+b=int (input("B: "))
+
+x=min (a,b)
+sum=0
+for i in range (1, x+1, 1):
+    if a%i == 0 and b%i == 0:
+        sum=i
+                
+print ("Sonlarning EKUB = ", sum, "ga teng")
+
+
+-------------------------------------------21-masala-----------------------------------------------
+a=int (input("A: "))
+b=int (input("B: "))
+
+x=min (a,b)
+sum=0
+for i in range (1, x+1, 1):
+    if a%i == 0 and b%i == 0:
+        sum=i
+        
+ekuk=(a*b)/sum
+                
+print ("Sonlarning EKUK = ", ekuk, "ga teng")
+
